@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+        <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logoTHU.png" alt="logo" width="64" height="auto" class="d-inline-block align-text-top">
@@ -238,7 +241,7 @@
    
     </section>
 
-    <!--TEAM-->
+    <!-- Team slider cards -->
     <section id="team" class="section-padding">
       <div class="container">
         <div class="row">
@@ -250,69 +253,82 @@
             </div>
           </div>
         </div>
-        <div class="row g-4 text-center">
-          <div class="col-md-4 col-sm-12 d-flex theme-shadow">
-            <div class="team-member image-zoom">
-              <div class="image-zoom-wrapper">
-                <img src="./assets/images/ABO 03.jpg" alt="Dr. Ronald Apaza Lanza">
+      </div>
+      <div class="slider-container swiper">
+        <div class="slider-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img src="./assets/images/ABO lanza.jpg" alt="abogado2" class="card-img">
+                </div>
               </div>
-              <div class="team-member-content">
-                <h6 class="text-white">Dr. Ronald Apaza Lanza</h6>
-                <p class="mb-0 text-white">1º Abogado</p>
-                <p class="mb-0 text-white">Primer Despacho</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex theme-shadow">
-            <div class="team-member image-zoom">
-              <div class="image-zoom-wrapper">
-                <img src="./assets/images/ABO 01.jpg" alt="Dra. Kathia Torres Rosales">
-              </div>
-              <div class="team-member-content">
-                <h6 class="text-white">Dra. Kathia Torres Rosales</h6>
-                <p class="mb-0 text-white">2º Abogado</p>
-                <p class="mb-0 text-white">Segundo Despacho</p>
+              <div class="card-content">
+                <h2 class="name">Dr. Ronald Apaza Lanza</h2>
+                <p class="description">Abogado<br> Primer Despacho</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex theme-shadow">
-            <div class="team-member image-zoom">
-              <div class="image-zoom-wrapper">
-                <img src="./assets/images/ABO 02.jpg" alt="Dr. Bernardo">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img src="./assets/images/ABO Khatia.jpg" alt="abogado2" class="card-img">
+                </div>
               </div>
-              <div class="team-member-content">
-                <h6 class="text-white">Dr. Bernardo</h6>
-                <p class="mb-0 text-white">3º Abogado</p>
-                <p class="mb-0 text-white">Tercer Despacho</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-12 d-flex theme-shadow">
-            <div class="team-member image-zoom">
-              <div class="image-zoom-wrapper">
-                <img src="./assets/images/Secretaria.jpg" alt="Bach. Tania Marisol Vilca Quispe.">
-              </div>
-              <div class="team-member-content">
-                <h6 class="text-white">Bach. Tania Marisol Vilca Quispe.</h6>
-                <p class="mb-0 text-white">Apoyo en secretaria</p>
+              <div class="card-content">
+                <h2 class="name">Dra. Kathia Torres Rosales</h2>
+                <p class="description">Abogado<br> Segundo Despacho</p>
               </div>
             </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-12 d-flex theme-shadow">
-            <div class="team-member image-zoom">
-              <div class="image-zoom-wrapper">
-                <img src="./assets/images/CLINTON.jpg" alt="Bach. Clinton Olguín Vilca.">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img src="./assets/images/ABO Ber.jpg" alt="abogado2" class="card-img">
+                </div>
               </div>
-              <div class="team-member-content">
-                <h6 class="text-white">Bach. Clinton Olguín Vilca.</h6>
-                <p class="mb-0 text-white">Asistente del THU</p>
+              <div class="card-content">
+                <h2 class="name">Dr. Bernardo</h2>
+                <p class="description">Abogado<br> Tercer Despacho</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img src="./assets/images/SecretariaT.jpg" alt="abogado2" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Bach. Tania Marisol Vilca Quispe.</h2>
+                <p class="description"><br>Apoyo en secretaria</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img src="./assets/images/ClintonA.jpg" alt="abogado2" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Bach. Clinton Olguín Vilca.</h2>
+                <p class="description"><br>Asistente del Tribunal de Honor Universitario</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+  
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div> 
     </section>
 
     <!--Activities-->
@@ -445,5 +461,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- JAVA -->
+    <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
