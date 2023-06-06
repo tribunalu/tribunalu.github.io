@@ -84,7 +84,9 @@ img{
 }
 
 .navbar-nav .nav-link.active{
-    color: var(--c-brand-light);
+    /* color: var(--c-brand-light); */
+    color: whitesmoke;
+    text-decoration: underline;
 }
 
 
@@ -162,17 +164,31 @@ img{
 }
 
 /* REVIEWS */
+.review{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 5px;
+}
+
 .review small{
     font-weight: 600;
     text-transform: uppercase;
     color: var(--c-brand);
 }
 
-.review{
+.review-head{
+    flex-grow: 1;
     display: inline-block;
-    margin: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
+.review-person img{
+    height: 250px;
+    width: auto;
+    padding-bottom: 5px;
+}
 
 /* TEAM */
 .team-member-content{
