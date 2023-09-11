@@ -27,3 +27,9 @@ var swiper = new Swiper(".slider-content", {
         },
     }
   });
+
+const correoLink = document.getElementById('correoLink');
+correoLink.addEventListener('click', function(event){
+  event.preventDefault();
+  window.location.href = 'mailto:tribunalu@unap.edu.pe';
+});
