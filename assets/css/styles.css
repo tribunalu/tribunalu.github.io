@@ -1,8 +1,8 @@
 @import url(../css/clash-display.css);
 
 :root{
-    --c-dark: #212529;
-    --c-brand: #4e57d4;
+    --c-dark: #f7d934;
+    --c-brand: rgba(45, 81, 241, 0.961);
     --c-brand-light: #6970dd;
     --c-brand-rgb: 78, 87, 212;
     --c-body: #727272;
@@ -35,6 +35,7 @@ a{
     transition: var(--transition);
 }
 
+
 a:hover{
     color: var(--c-brand-light);
 }
@@ -43,7 +44,17 @@ img{
     max-width: 100%;
     height: auto;
 }
-
+.logo img {
+    height: auto;
+    margin-top: auto;
+}
+.logo{
+    margin: 15px 15px 0 0;
+}
+.logo p {
+    margin:0px;
+    padding-top: 0px;
+}
 .section-padding{
     padding-top: 140px;
     padding-bottom: 140px;
@@ -80,12 +91,12 @@ img{
 
 .navbar-nav .nav-link{
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-nav .nav-link.active{
     /* color: var(--c-brand-light); */
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
@@ -101,7 +112,7 @@ img{
 
 /* SECTION TITLE */
 .section-title{
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .section-title .line{
@@ -155,7 +166,7 @@ img{
 }
 .service:hover h5,
 .service:hover p {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .service:hover .iconbox{
