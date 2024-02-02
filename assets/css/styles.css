@@ -110,6 +110,14 @@ img{
     background-size: cover;
 }
 
+  /* Estilo para la imagen */
+  #hero img {
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 45%; /* Ancho de la imagen */
+  }
+
+
 /* SECTION TITLE */
 .section-title{
     margin-bottom: 70px;
